@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstap css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,469 +21,362 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap"
         rel="stylesheet">
 
-    <!-- OWL CSS -->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-
     <!-- Main css -->
     <link rel="stylesheet" href="./css/index.css">
-    <title>Merged</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"
+        defer></script>
+    <script src="./js/main.js" defer></script>
+    <title>Profile</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 header__left">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+    <div id="myModal" class="modal">
+        <span class="modalClose">&times;</span>
+        <div class="modal-content">
+            <img src="./images/img-11.jpg" class="img-fluid modalImg">
+        </div>
+    </div>
+    <!-- ASIDE -->
+    <aside class="d-fix">
+        <div class="flex-column d-flex justify-content-between aside_content">
+            <div>
+                <div class="aside_top d-flex align-items-center flex-column justify-content-center">
+                    <div class="myAva">
+                        <img src="./images/ava.jpg" />
                     </div>
-                    <div class="col-sm-6 header__right">
-                        <i class="fa fa-phone"></i>
-                        <p>0968490919</p>
+                    <div>
+                        NguyenQuan
+                    </div>
+                    <span>
+                        Front-End Developer
+                    </span>
+                </div>
+                <div class="aside_mid">
+                    <nav class="navbar navbar-expand-lg navbar-light  ">
+                        <div class="collapse navbar-collapse justify-content-center" id="header__nav">
+                            <ul class="navbar-nav flex-column align-items-center ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#edu">EDUCATION</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#galery">GALLERY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="aside_bottom d-flex align-items-center justify-content-center">
+                <div class="row flex-column align-items-center">
+                    <p>
+                        Made with <i style="color: rgb(202, 3, 3);" class="fas fa-heart"></i> by D4rl1ng
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+
+    <section class="content_right">
+        <!-- INTRO -->
+        <section class="Intro">
+            <div class="row m-0">
+                <div class="Intro_left col-4">
+                    <div class="intro_content">
+                        <span>
+                            Hi!
+                        </span>
+                        <p>
+                            i'm Nguyen The Quan
+                        </p>
+                    </div>
+                    <a href="#about" class="intro_btn">
+                        <span>More about me! </span>
+                    </a>
+                </div>
+                <div class="Intro_right col-8">
+                    <img src="./images/profile.jpg" class="myImg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT-->
+        <section id="about">
+            <div class="container mr-0 section">
+                <div class="heading ">
+                    <h3>ABOUT ME</h3>
+                    <p>Who am i ?</p>
+                    <div class="bg-white bg-trans-1"></div>
+                </div>
+                <div class="about_content">
+                    <p>
+                        I am a Front-end developer born and raised in Bac Ninh city,
+                    </p>
+                    <p>
+                        who loves clean, simple & unique design. I also love taking picture...
+                    </p>
+                    <div class="bg-white bg-trans-2"></div>
+                </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="edu">
+            <div class="container mr-0 section">
+                <div class="heading">
+                    <h3>My Education</h3>
+                    <p>Our results will fascinate you with the results we have</p>
+                </div>
+                <div class="edu_content">
+                    <div class="edu_item active">
+                        <h3>Han Thuyen high school</h3>
+                        <span>August 2015 - 2018</span>
+                        <p class="edu_text">
+                            On February 14, 1946, Han Thuyen High School was established, formerly Bac Ninh High School.
+                            With the attention of Party committees, authorities and people at all levels, and the
+                            efforts of generations of teachers and students, Han Thuyen High School has achieved many
+                            comprehensive results, making common contributions to the cause of education and training.
+                        </p>
+                    </div>
+                    <div class="edu_item">
+                        <h3>Academy of Finance</h3>
+                        <span>September 2018 - Present</span>
+                        <p class="edu_text">
+                            Academy of Finance, formerly known as the School of Finance and Accounting staff of the
+                            Central Bank, was established in 1963 and renamed in 1976 as Hanoi University of Finance and
+                            Accounting. On August 17, 2001, the Academy of Finance was established on the basis of
+                            merging 3 units: Hanoi University of Finance and Accounting, Institute of Finance and
+                            Training Center for Financial Officers.
+                        </p>
+                    </div>
+                    <div class="edu_item">
+                        <h3>Self-taught programming</h3>
+                        <span>September 2021 - Present</span>
+                        <p class="edu_text">
+                            Most of the time I spend learning programming is self-taught, I signed up for a front end
+                            class to supplement my knowledge of Javascript and Reactjs. Currently, I'm learning more
+                            about Typesript
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="header__bottom">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light  ">
-                    <a class="navbar-brand" href="#"><span>M</span>ERGED</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header__nav"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="header__nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">GALLERY</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    PAGES
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Codes</a>
-                                    <div class="nav__dropdown"></div>
-                                    <a class="dropdown-item" href="#">About</a>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="galery">
+            <div class="container mr-0 section">
+                <div class="heading">
+                    <h3>Gallery</h3>
+                    <p>
+                        Some of photos that you may find interested
+                    </p>
+                </div>
+
+                <div class="gallery_container">
+                    <div class="gallery-item w-3 h-2">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-10.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-2 h-3">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-5.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-1 h-1">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-1.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-2 h-3">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-12.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-1 h-3">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-6.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-1 h-1">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-15.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-2 h-3">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-8.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-1 h-3">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-9.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-2 h-1">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-11.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-1 h-2">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-14.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-3 h-2">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-4.jpg" />
+                        </div>
+                    </div>
+                    <div class="gallery-item w-3 h-2">
+                        <div class="image">
+                            <img class="img-fluid galery_img" src="./images/img-13.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container mr-0 section">
+                <div class="heading">
+                    <h3>Contact</h3>
+                    <p>
+                        I'm open for any suggestion or just to have a chat
+                    </p>
+                </div>
+
+                <div class="contact_container">
+                    <div class="row">
+                        <div class="col-6 p-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="contact_item">
+                                        <p>Address</p>
+                                        <p>số 102, ngõ 44, Trần Thái
+                                            Tông, Q. Cầu Giấy, Hà Nội
+                                        </p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+                                <div class="col-4">
+                                    <div class="contact_item">
+                                        <p>Email</p>
+                                        <p>ngthequan26@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="contact_item">
+                                        <p>Phone</p>
+                                        <p>+84968490919</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_bottom">
+                                <input placeholder="Name" type="text" class="contact_input" />
+                                <input placeholder="Email" type="email" class="contact_input" />
+                                <input placeholder="Subject" type="text" class="contact_input" />
+                                <textarea placeholder="Create a message here" cols="30" rows="4"
+                                    class="contact_input"></textarea>
+                            </div>
 
-    <!-- CAROUSEL -->
-    <section class="carousel">
-        <div class="carousel__overlay">
-            <div id="carousel__main" class=" owl-carousel owl-theme container">
-                <div class="item ">
-                    <h3>The Best Business Support</h3>
-                    <p>Etiam Vitae Augue Odio. Ut Laoreet Ipsum Vel Ultrices Viverra. Donec Nisl Dolor, Mollis Vel
-                        Libero Id, Tempor Cursus Lectus. Vestibulum Eu Ligula Et Pharetra Efficitur. Maecenas
-                        Eleifend.</p>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#" class="btn--primary" data-toggle="modal" data-target="#carousel__modal">Read
-                                More</a></li>
-                    </ul>
-                </div>
-                <div class="item ">
-                    <h3>SERVICES TO GROW YOUR BUSINESS</h3>
-                    <p>Etiam Vitae Augue Odio. Ut Laoreet Ipsum Vel Ultrices Viverra. Donec Nisl Dolor, Mollis Vel
-                        Libero Id, Tempor Cursus Lectus. Vestibulum Eu Ligula Et Pharetra Efficitur. Maecenas
-                        Eleifend.</p>
-                    <ul>
-                        <li><a href="#" class="btn--primary" data-toggle="modal" data-target="#carousel__modal">Read
-                                More</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="item ">
-                    <h3>OPEN MINDS. CREATING FUTURE.</h3>
-                    <p>Etiam Vitae Augue Odio. Ut Laoreet Ipsum Vel Ultrices Viverra. Donec Nisl Dolor, Mollis Vel
-                        Libero Id, Tempor Cursus Lectus. Vestibulum Eu Ligula Et Pharetra Efficitur. Maecenas
-                        Eleifend.</p>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#" class="btn--primary" data-toggle="modal" data-target="#carousel__modal">Read
-                                More</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="modal fade" id="carousel__modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h5 class="modal-title" id="exampleModalLabel">Merged</h5>
-                    </div>
-                    <div class="modal-body">
-                        <img src="./images/about.jpg" alt="">
-                        <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus
-                            odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-                            Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse
-                            ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INTRO-->
-    <section class="intro ">
-        <div class="container section">
-            <div class="heading">
-                <h3>What you get</h3>
-                <p>Our team provides consulting services focusing on the most critical business issues.
-                </p>
-            </div>
-
-            <div class="intro__content">
-                <div class="intro__divide"></div>
-
-                <div class="row mx-0 text-center">
-                    <div class="col-12 col-sm-4 info__item">
-                        <i class="fas fa-th-large"></i>
-                        <h4>Advanced Business</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                    <div class="col-12 col-sm-4 info__item">
-                        <i class="fa fa-share-square"></i>
-                        <h4>Free Updates</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                    <div class="col-12 col-sm-4 info__item">
-                        <i class="fa fa-expand-arrows-alt"></i>
-                        <h4>Looking Exellent</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="intro__bottom">
-            <div class=" container ">
-                <div class="row">
-                    <div class="intro__bottom__item col-md-9">
-                        <h3>We Make the Best Business Solutions</h3>
-                    </div>
-                    <div class="intro__bottom__item col-md-3">
-                        <button>Contact us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stat section">
-        <div class="container">
-            <div class="heading">
-                <h3>We are always ahead Proffesional solutions for your business.</h3>
-                <p>Our results will fascinate you with the results we have
-                </p>
-            </div>
-            <div class="row mx-0 text-center">
-                <div class="col-12 col-sm-4 stat__item">
-                    <p class="counter">1,546</p>
-                    <h3>Satisfied Clients</h3>
-                    <h4>Pure satisfaction</h4>
-                </div>
-                <div class="col-12 col-sm-4 stat__item">
-                    <p class="counter">14,345</p>
-                    <h3>Successful Investments</h3>
-                    <h4>Net income</h4>
-                </div>
-                <div class="col-12 col-sm-4 stat__item">
-                    <p class="counter">563</p>
-                    <h3>Branches Worldwides</h3>
-                    <h4>Highest level of credibility</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="service section">
-        <div class="container">
-            <div class="heading">
-                <h3>Our Main Services</h3>
-                <p>
-                    Our team provides consulting services focusing on the most critical business issues.
-                </p>
-            </div>
-
-            <div class="row mx-0 text-center ">
-                <div class="col-12 col-sm-4  px-0">
-                    <div class="service__item primary--color">
-                        <i class="fa fa-arrows-alt"></i>
-                        <h3>Commodities</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 px-0">
-                    <div class="service__item">
-                        <i class="fa fa-chart-bar"></i>
-                        <h3>Analysis</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 px-0">
-                    <div class="service__item primary--color">
-                        <i class="fab fa-btc"></i>
-                        <h3>Consulting</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 px-0">
-                    <div class="service__item">
-                        <i class="fa fa-cogs"></i>
-                        <h3>Forecasting</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 px-0">
-                    <div class="service__item primary--color">
-                        <i class="fa fa-bullseye"></i>
-                        <h3>Financial</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 px-0">
-                    <div class="service__item">
-                        <i class="fa fa-cubes"></i>
-                        <h3>Assurance</h3>
-                        <p>Taque earum rerum hitaque tenetur rum sapiente</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEEDBACK -->
-    <section class="feedback section">
-        <div class="container">
-            <div class="heading">
-                <h3>
-                    Our Customers’ Opinion
-                </h3>
-                <p>
-                    Our team provides consulting services focusing on the most critical business issues.
-                </p>
-            </div>
-
-            <div id="feedback__carousel" class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t1.jpg" alt="">
-                        <h3>Federeka</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t2.jpg" alt="">
-                        <h3>Mary watson</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t3.jpg" alt="">
-                        <h3>Thompson</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t2.jpg" alt="">
-                        <h3>Gomez</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t3.jpg" alt="">
-                        <h3>john whick</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback__item">
-                        <img src="./images/t1.jpg" alt="">
-                        <h3>Federeka</h3>
-                        <p>Cras tortor ipsum, gravida vitae finibus non, bibendum quis turpis. Cras semper accumsan
-                            metus,
-                            et aliquet diam vestibulum ut.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="section">
-            <div class="container">
-                <div class="row mx-0">
-                    <div class="col-12 col-md-6 footer__item footer__left">
-                        <h3>Subscribe Newsletter</h3>
-                        <p>By subscribing to our mailing list you will always get latest news from us.</p>
-                        <form>
-                            <input type="email" placeholder="Enter your email..." required>
-                            <button>
-                                <i class="far fa-envelope"></i>
+                            <button class="contact_btn">
+                                Send message
                             </button>
-                        </form>
-                    </div>
-                    <div class="col-12 col-md-2 footer__item">
-                        <h3>
-                            Our Links
-                        </h3>
-                        <ul class="footer__middle">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-4 footer__item">
-                        <h3>Contact Us</h3>
-                        <ul class="footer__right">
-                            <li style="align-items: center;">
-                                <i class="fa fa-map-marker-alt"></i>
-                                <div>
-                                    <p class="my-0">số 102, ngõ 44, Trần Thái
-                                        Tông, Q. Cầu Giấy, Hà Nội</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <a href="mailto: ngthequan26@gmail.com">ngthequan26@gmail.com</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p>0968490919</p>
-                            </li>
-                        </ul>
+
+                            <div class="contact_social">
+                                <h4>Follow me here!</h4>
+                                <a href="https://www.facebook.com/profile.php?id=100005135208157">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+
+                                <a
+                                    href="https://www.instagram.com/Cuan2620/?fbclid=IwAR2PGqs3_YzB1pH5QPsIW2pikq-atzMC-AenqKp85gau6JsZzkFF5yyouhQ">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+
+                                <a href="https://github.com/D4r1inG">
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contact_img"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__bottom">
-            <p>© 2018 Merged. All Rights Reserved | Design by <a href="#">w3layouts</a></p>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Back to top -->
-    <a href="#" class="backToTop cd-top text-replace js-cd-top">
-        <img src="./images/arrow.png" alt="">
-    </a>
+        <!-- FOOTER -->
+        <!-- <footer>
+            <div class="section">
+                <div class="container">
+                    <div class="row mx-0">
+                        <div class="col-12 col-md-6 footer__item footer__left">
+                            <h3>Subscribe Newsletter</h3>
+                            <p>By subscribing to our mailing list you will always get latest news from us.</p>
+                            <form>
+                                <input type="email" placeholder="Enter your email..." required>
+                                <button>
+                                    <i class="far fa-envelope"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-2 footer__item">
+                            <h3>
+                                Our Links
+                            </h3>
+                            <ul class="footer__middle">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 footer__item">
+                            <h3>Contact Us</h3>
+                            <ul class="footer__right">
+                                <li style="align-items: center;">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div>
+                                        <p class="my-0">số 102, ngõ 44, Trần Thái
+                                            Tông, Q. Cầu Giấy, Hà Nội</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto: ngthequan26@gmail.com">ngthequan26@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <p>0968490919</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2018 Merged. All Rights Reserved | Design by <a href="#">w3layouts</a></p>
+            </div>
+        </footer>
+    </section> -->
 
-    <!-- Jquery -->
-    <script src="./js/jquery.min.js"></script>
-
-    <!-- Bootstap js -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
-
-    <!-- owl js -->
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
-        $('#carousel__main').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            mouseDrag: false,
-            smartSpeed: 600,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        })
-    </script>
-
-    <script>
-        $("#feedback__carousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                478: {
-                    items: 2
-                },
-                800: {
-                    items: 3
-                },
-            }
-        })
-    </script>
-
-    <!-- jquery waypoint -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-    <!-- Countup js -->
-    <script src="./js/jquery.countup.min.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-
-    <!-- BACK TO TOP -->
-    <script src="./js/util.js"></script>
-    <script src="./js/main-back-to-top.js"></script>
 </body>
 
 </html>
