@@ -263,7 +263,7 @@ aside {
 /* ABOUT */
 
 #about {
-    background: url("/images/img-1.jpg");
+    background: url("https://user-images.githubusercontent.com/96009099/173266952-222206da-a2a6-476b-842b-a5aad42f5c6e.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 100%;
@@ -321,15 +321,15 @@ aside {
 }
 
 .edu_item:nth-child(1)::after {
-    background-image: url("/images/img-2.png");
+    background-image: url("/images/img-4.png");
 }
 
 .edu_item:nth-child(2)::after {
-    background-image: url("/images/img-3.jpg");
+    background-image: url("/https://user-images.githubusercontent.com/96009099/173267292-29c13060-aee9-41d9-9f05-a281e6038ea7.jpg");
 }
 
 .edu_item:nth-child(3)::after {
-    background-image: url("/images/img-1.jpg");
+    background-image: url("https://user-images.githubusercontent.com/96009099/173266952-222206da-a2a6-476b-842b-a5aad42f5c6e.jpg");
 }
 
 .edu_item span {
